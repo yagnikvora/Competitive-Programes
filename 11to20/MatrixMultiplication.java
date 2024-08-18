@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class MatrixMultiplication {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
+        //Taking dimension
         System.out.println("Enter dimension of First Matrix (Row X Column)");
         int i1 = sc.nextInt();
         int j1 = sc.nextInt();
@@ -14,6 +16,8 @@ public class MatrixMultiplication {
             System.out.println("Please enter valid dimension");
             System.exit(0);
         }
+
+        //Taking First Matrix
         int a[][] = new int[i1][j1];
         System.out.println("Enter data of First Matrix");
         for (int i = 0; i < i1; i++) {
@@ -22,6 +26,8 @@ public class MatrixMultiplication {
                 a[i][j] = sc.nextInt();
             }
         }
+
+        //Taking Second Matrix
         int b[][] = new int[i2][j2];
         System.out.println("Enter data of Second Matrix");
         for (int i = 0; i < i2; i++) {
@@ -31,6 +37,7 @@ public class MatrixMultiplication {
             }
         }
 
+        //Perform Multiplication
         int c[][] = new int[i1][j2];
         for(int i =0 ; i< a.length ; i++){
             for(int j = 0 ; j < b[0].length; j++){
@@ -39,6 +46,8 @@ public class MatrixMultiplication {
                 }
             }
         }
+
+        //Displaying Result
         System.out.println("---------Result--------");
         for (int i = 0; i < c.length; i++) {
             for (int j = 0; j < c[0].length; j++) {
