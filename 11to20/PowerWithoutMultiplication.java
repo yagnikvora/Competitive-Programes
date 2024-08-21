@@ -26,11 +26,10 @@ public class PowerWithoutMultiplication {
         if(power == 1)
             return base;
 
-        int ans=0;
+        int ans=base;
         int b = base;
         for(int i = 1;i<power;i++){
-            ans = 0;
-            for(int j = 1;j<=base;j++)
+            for(int j = 1;j<base;j++)
                 ans += b;
             b = ans;
         }
