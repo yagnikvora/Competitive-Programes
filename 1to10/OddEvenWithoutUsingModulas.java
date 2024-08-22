@@ -9,13 +9,13 @@ public class OddEvenWithoutUsingModulas {
         sc.close();
     }
 
-    // public static void checkOddEven(int n) {
-    //     int temp = n / 2;
-    //     if (temp * 2 == n)
-    //         System.out.print("Number is Even");
-    //     else
-    //         System.out.println("Number is Odd");
-    // }
+//     public static void checkOddEven(int n) {
+//         int temp = n / 2;
+//         if (temp * 2 == n)
+//             System.out.print("Number is Even");
+//         else
+//             System.out.println("Number is Odd");
+//     }
 
     public static void checkOddEven(int n) {
         if ((n & 1) == 0)
