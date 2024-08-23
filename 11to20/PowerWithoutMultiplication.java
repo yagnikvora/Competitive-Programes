@@ -9,7 +9,7 @@ public class PowerWithoutMultiplication {
         int power = sc.nextInt();
         int ans = calculate(base,power);
         if(ans < 0)
-            System.out.println("Please enter small inputs, This program is not made for big inputs");
+            System.out.println("---Please enter small inputs, This program is not made for big inputs--");
         else
             System.out.println(base+"^"+power+": "+ans);
 
