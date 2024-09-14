@@ -1,3 +1,9 @@
+//Enter size of square : 5
+//  #  #  #  #  #
+//  #           #
+//  #           #
+//  #           #
+//  #  #  #  #  #
 import java.util.Scanner;
 
 public class PatternOne {
